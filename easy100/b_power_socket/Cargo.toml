@@ -1,0 +1,10 @@
+[package]
+name = "b_power_socket"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+proconio = "0.4.3"
+
+[dev-dependencies]
+parameterized = "1.0.1"

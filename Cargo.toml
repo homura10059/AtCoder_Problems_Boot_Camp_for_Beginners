@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "easy100/*",
+]
+
+resolver = "2"
