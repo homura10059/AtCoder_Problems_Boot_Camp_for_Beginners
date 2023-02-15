@@ -11,23 +11,11 @@ fn main() {
 }
 
 fn calc(sockets: i32, total: i32) -> i32 {
-    let mut num = total / 2;
-    let mut result = 0;
-    loop {
-        let sum = sockets * num - (num - 1);
-
-        if sum >= total {
-            result = num;
-            num -= 1;
-        } else {
-            num += 1;
-        }
-
-        if result == num {
-            break;
-        }
-    }
-    result
+    // すでに一つ口はあるので total - 1 個口を増やしたいという問題
+    // 1つ増やすと sockets - 1 個口が増える
+    let a = sockets as f32;
+    let b = total as f32;
+    ((b - 1.0) / (a - 1.0)).ceil() as i32
 }
 
 #[cfg(test)]
