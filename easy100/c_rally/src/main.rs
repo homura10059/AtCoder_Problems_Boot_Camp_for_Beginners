@@ -9,11 +9,11 @@ fn all_costs(x: &Vec<i16>, p: i16) -> i32 {
 }
 
 fn calc(x: &Vec<i16>) -> i32 {
-    let min = x.iter().min().unwrap();
-    let max = x.iter().max().unwrap();
+    let min = *x.iter().min().unwrap();
+    let max = *x.iter().max().unwrap();
 
     // let all_points = 0..101;
-    let all_points = *min..=*max;
+    let all_points = min..=max;
 
     let hash_map = all_points
         .into_iter()
