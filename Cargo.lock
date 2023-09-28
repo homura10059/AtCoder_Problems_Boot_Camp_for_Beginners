@@ -24,6 +24,13 @@ dependencies = [
 ]
 
 [[package]]
+name = "b_tax_rate"
+version = "0.1.0"
+dependencies = [
+ "proconio",
+]
+
+[[package]]
 name = "c_rally"
 version = "0.1.0"
 dependencies = [
