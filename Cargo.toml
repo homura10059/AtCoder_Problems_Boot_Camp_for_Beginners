@@ -2,6 +2,7 @@
 
 members = [
     "easy100/*",
+    "templates/*",
 ]
 
 resolver = "2"
