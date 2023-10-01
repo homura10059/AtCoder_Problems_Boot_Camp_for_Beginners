@@ -7,4 +7,4 @@ edition = "2021"
 
 [dependencies]
 proconio = "0.4.3"
-log = { version = "0.4", features = ["release_max_level_off"] }
+log = { version = "0.4", features = ["release_max_level_off", "std", "serde"]  }

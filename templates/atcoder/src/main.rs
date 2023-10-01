@@ -1,8 +1,6 @@
-use log::info;
 use proconio::input;
 
 fn calc(x: &Vec<i16>) -> i32 {
-    info!("{:?}", x);
     0
 }
 

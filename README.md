@@ -7,5 +7,5 @@
 ### 新しい問題を解く
 
 ```console
-$ 
+$ cargo generate --path ../templates/atcoder
 ```
