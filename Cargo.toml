@@ -2,7 +2,7 @@
 
 members = [
     "easy100/*",
-    "templates/*",
+#    "templates/*", # templates はビルドできないので除外
 ]
 
 resolver = "2"
