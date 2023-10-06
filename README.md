@@ -7,5 +7,7 @@
 ### 新しい問題を解く
 
 ```console
-$ cargo generate --path ../templates/atcoder
+$ cargo generate --name b-sample \
+    --git https://github.com/rust-lang-ja/atcoder-rust-base \
+    --branch ja
 ```
