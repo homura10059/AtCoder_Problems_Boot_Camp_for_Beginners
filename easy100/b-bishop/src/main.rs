@@ -1,6 +1,10 @@
 use proconio::input;
 
 fn calc((h, w): (i32, i32)) -> i64 {
+    if h == 1 || w == 1 {
+        return 1;
+    }
+
     let mul = h as i64 * w as i64;
     if mul % 2 == 0 {
         mul / 2
