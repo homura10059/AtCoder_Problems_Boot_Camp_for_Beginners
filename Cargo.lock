@@ -33,6 +33,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-card-game-for-two"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-collecting-balls-easy-version"
 version = "0.1.0"
 dependencies = [
