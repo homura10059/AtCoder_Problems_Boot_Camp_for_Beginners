@@ -86,6 +86,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "c-traveling-salesman-around-lake"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "c_rally"
 version = "0.1.0"
 dependencies = [
