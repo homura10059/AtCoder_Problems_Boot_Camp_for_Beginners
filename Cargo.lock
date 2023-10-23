@@ -25,6 +25,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-atcoder"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-bigo"
 version = "0.1.0"
 dependencies = [
@@ -91,6 +99,14 @@ name = "b_tax_rate"
 version = "0.1.0"
 dependencies = [
  "proconio 0.4.3",
+]
+
+[[package]]
+name = "c-alchemist"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
 ]
 
 [[package]]
