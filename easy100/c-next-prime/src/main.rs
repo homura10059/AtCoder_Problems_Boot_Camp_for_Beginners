@@ -2,21 +2,33 @@
 
 use proconio::input;
 
-// ABC086C - Traveling
-// https://atcoder.jp/contests/abs/tasks/arc089_a
+fn sieve_of_eratosthenes(x: usize) -> Vec<usize> {
+    let mut num_list = vec![true; x + 1];
+    num_list[0] = false;
+    num_list[1] = false;
+
+    for i in 2..=(x as f64).sqrt() as usize {
+        if !num_list[i] {
+            continue;
+        }
+        for j in (i * 2..=x).step_by(i) {
+            num_list[j] = false;
+        }
+    }
+
+    num_list
+        .iter()
+        .enumerate()
+        .filter(|(_, &flag)| flag)
+        .map(|(i, _)| i)
+        .collect::<Vec<usize>>()
+}
 
 fn main() {
     input! {
-        n: usize,
-        mut plan: [(i32, i32, i32); n],  // Vec<(i32, i32, i32)>
+        x: usize,
     }
-    plan.insert(0, (0, 0, 0));
-    let yes = plan.windows(2).all(|w| {
-        let (t0, x0, y0) = w[0];
-        let (t1, x1, y1) = w[1];
-        let time = t1 - t0;
-        let dist = (x1 - x0).abs() + (y1 - y0).abs();
-        dist <= time && time % 2 == dist % 2
-    });
-    println!("{}", if yes { "Yes" } else { "No" });
+    let prime_list = sieve_of_eratosthenes(x * 2);
+
+    println!("{}", prime_list.iter().find(|&&p| p >= x).unwrap());
 }
