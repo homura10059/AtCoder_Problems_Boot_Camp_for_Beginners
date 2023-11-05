@@ -73,6 +73,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-chocolate"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-collatz-problem"
 version = "0.1.0"
 dependencies = [
