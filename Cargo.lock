@@ -97,6 +97,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-nice-shopping"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "itertools",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-toll-gates"
 version = "0.1.0"
 dependencies = [
@@ -195,6 +204,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2bc63338a59538d4f4b767dfb6082e4d26736aadb5100894b76039a04d6ad519"
 
 [[package]]
+name = "either"
+version = "1.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a26ae43d7bcc3b814de94796a5e736d4029efb0ee900c12e2d54c993ad1a1e07"
+
+[[package]]
 name = "hashbrown"
 version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -208,6 +223,15 @@ checksum = "1885e79c1fc4b10f0e172c475f458b7f7b93061064d98c3293e98c5ba0c8b399"
 dependencies = [
  "autocfg",
  "hashbrown",
+]
+
+[[package]]
+name = "itertools"
+version = "0.9.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "284f18f85651fe11e8a991b2adb42cb078325c996ed026d994719efcfca1d54b"
+dependencies = [
+ "either",
 ]
 
 [[package]]
