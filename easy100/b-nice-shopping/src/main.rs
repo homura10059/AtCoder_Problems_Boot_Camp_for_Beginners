@@ -1,6 +1,5 @@
 // -*- coding:utf-8-unix -*-
 
-use itertools::Itertools;
 use proconio::input;
 
 fn main() {
@@ -10,20 +9,12 @@ fn main() {
          b_array: [usize; b],
          xyc: [(usize, usize, usize); m],
     }
-    let res = a_array
+    let min_ab = a_array.iter().min().unwrap() + b_array.iter().min().unwrap();
+    let min = xyc
         .iter()
-        .enumerate()
-        .cartesian_product(b_array.iter().enumerate())
-        .map(|((i, ai), (j, bj))| {
-            let c = xyc
-                .iter()
-                .filter(|(x, y, _)| *x == i + 1 && *y == j + 1)
-                .map(|(_, _, c)| c)
-                .max()
-                .unwrap_or(&0);
-            ai + bj - c
-        })
+        .map(|(x, y, c)| a_array[x - 1] + b_array[y - 1] - c)
+        .chain([min_ab].iter().copied())
         .min()
         .unwrap();
-    println!("{}", res);
+    println!("{}", min);
 }
