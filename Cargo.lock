@@ -97,11 +97,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-count-ball"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-nice-shopping"
 version = "0.1.0"
 dependencies = [
  "cli_test_dir",
  "itertools",
+ "proconio 0.3.6",
+]
+
+[[package]]
+name = "b-shift-only"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
  "proconio 0.3.6",
 ]
 
