@@ -89,6 +89,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-coins"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-collatz-problem"
 version = "0.1.0"
 dependencies = [
@@ -126,6 +134,14 @@ version = "0.1.0"
 dependencies = [
  "cli_test_dir",
  "itertools 0.9.0",
+ "proconio 0.3.6",
+]
+
+[[package]]
+name = "b-not-found"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
  "proconio 0.3.6",
 ]
 
