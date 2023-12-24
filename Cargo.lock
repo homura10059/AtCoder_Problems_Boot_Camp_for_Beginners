@@ -257,6 +257,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "c-exception-handling"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "c-go-to-school"
 version = "0.1.0"
 dependencies = [
