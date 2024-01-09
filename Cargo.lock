@@ -19,6 +19,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "a-fairness"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "a-range-product"
 version = "0.1.0"
 dependencies = [
@@ -154,6 +162,14 @@ dependencies = [
 
 [[package]]
 name = "b-increment-decrement"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
+name = "b-lucas-numbers"
 version = "0.1.0"
 dependencies = [
  "cli_test_dir",
