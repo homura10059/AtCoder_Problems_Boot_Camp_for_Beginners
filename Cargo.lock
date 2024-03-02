@@ -202,6 +202,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-picture-frame"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-postal-code"
 version = "0.1.0"
 dependencies = [
