@@ -137,6 +137,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-comparison"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-count-ball"
 version = "0.1.0"
 dependencies = [
