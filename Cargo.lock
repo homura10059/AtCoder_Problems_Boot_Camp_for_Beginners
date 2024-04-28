@@ -243,6 +243,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-some-sums"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-toll-gates"
 version = "0.1.0"
 dependencies = [
