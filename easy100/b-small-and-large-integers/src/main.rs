@@ -6,9 +6,7 @@ fn main() {
     input! {
         (a, b, k): (usize,usize,usize),
     }
-    for i in a..(b + 1) {
-        if i < a + k || i > b - k {
-            println!("{}", i);
-        }
-    }
+    (a..=b)
+        .filter(|&x| x < a + k || x > b - k)
+        .for_each(|x| println!("{}", x));
 }
