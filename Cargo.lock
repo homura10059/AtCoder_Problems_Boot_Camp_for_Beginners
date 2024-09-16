@@ -225,6 +225,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-guidebook"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-increment-decrement"
 version = "0.1.0"
 dependencies = [
