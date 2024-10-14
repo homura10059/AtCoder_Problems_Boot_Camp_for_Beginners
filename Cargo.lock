@@ -19,6 +19,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "a-dividing-a-string"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "a-fairness"
 version = "0.1.0"
 dependencies = [
