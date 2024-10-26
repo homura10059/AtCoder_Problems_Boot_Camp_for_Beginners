@@ -408,6 +408,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "c-100-to-105"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "c-alchemist"
 version = "0.1.0"
 dependencies = [
