@@ -209,6 +209,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "b-exponential"
+version = "0.1.0"
+dependencies = [
+ "cli_test_dir",
+ "proconio 0.3.6",
+]
+
+[[package]]
 name = "b-five-dishes"
 version = "0.1.0"
 dependencies = [
